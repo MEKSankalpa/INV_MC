@@ -1,0 +1,60 @@
+.curve-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .curve-section::after {
+    content: "";
+    position: absolute;
+    bottom: 50px; /* pushes the curve down a bit */
+    left: 0;
+    width: 100%;
+    height: 100px; /* curve height */
+    background: white; /* next section color */
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+  
+  @font-face {
+    font-family: "Safira March Personal Use";
+    src: url("./fonts/SafiraMarchPersonalUseOnly.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-safira {
+    font-family: "Safira March Personal Use", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "LatinmodernmathRegular";
+    src: url("./fonts/LatinmodernmathRegular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-LMR {
+    font-family: "LatinmodernmathRegular", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  @font-face {
+    font-family: "Satisfy";
+    src: url("./fonts/Satisfy.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-Satify {
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
