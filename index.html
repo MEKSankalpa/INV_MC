@@ -41,23 +41,30 @@
   
   
 
-  <!-- Date Section -->
-  <section class="py-16 text-center relative">
-    <div class="absolute left-0 top-10 opacity-30">
-      <img src="https://www.svgrepo.com/show/488200/flower-rose.svg" alt="flower" class="w-32 md:w-48">
-    </div>
-    <div class="absolute right-0 bottom-10 opacity-30">
-      <img src="https://www.svgrepo.com/show/488200/flower-rose.svg" alt="flower" class="w-32 md:w-48">
-    </div>
+<!-- Date Section -->
+<section class="py-4 text-center relative">
+  <!-- Bottom Left Flower -->
+  <div class="absolute left-0 bottom-0">
+    <img src="./images/Flower1.png" alt="flower" class="w-32 md:w-48">
+  </div>
 
-    <h2 class="text-5xl font-bold text-gray-800">KM</h2>
-    <div class="mt-6 text-3xl md:text-5xl font-light tracking-widest text-gray-700">
-      01 DEC 25
-    </div>
+  <!-- Top Right Flower -->
+  <div class="absolute right-0 top-0">
+    <img src="./images/Flower2.png" alt="flower" class="w-32 md:w-48">
+  </div>
 
-    <!-- Countdown -->
-    <div id="countdown" class="countdown flex justify-center gap-6 mt-10 text-white bg-gray-800 rounded-xl px-6 py-3 shadow-lg"></div>
-  </section>
+  <!-- Center Image (KM + Date as one image) -->
+  <div class="flex justify-center">
+    <img src="./images/Logo.png" alt="KM Date" class="h-72 md:h-96 w-30">
+  </div>
+
+  <!-- Countdown -->
+  <div class="flex justify-center mt-10">
+    <div id="countdown" 
+         class="countdown flex gap-6 text-white bg-gray-800 rounded-xl px-6 py-3 shadow-lg">
+    </div>
+  </div>
+</section>
 
   <script>
     // Countdown Script
