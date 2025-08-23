@@ -66,12 +66,9 @@
     font-style: normal;
   }
   
-  .font-Satify {
+  .font-CountDown {
     font-family: "countdown-font", serif;
-    font-weight: 400;
-    font-style: normal;        /* matches your requirement */
-    line-height: 100%;         /* exact line height */
-    letter-spacing: 0.04em;    /* 4% letter spacing */
+      /* 4% letter spacing */
   }
 
   .countdown-font {
@@ -121,7 +118,7 @@
     position: absolute;
     right: -25px;               /* adjust spacing */
     top: 0;                     /* align with top of number */
-    transform: translateY(-18%); /* fine-tune vertical centering */
+    transform: translateY(-15%); /* fine-tune vertical centering */
     font-size: 1rem;            /* same size as numbers */
     font-weight: bold;
     color: #fff;
