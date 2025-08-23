@@ -77,18 +77,18 @@
     color: #333;
   }
 
-  .countdown {
+  /* .countdown {
     display: flex;
-    gap: 2rem;               /* spacing between blocks */
+    gap: 2rem;               
     justify-content: center;
     align-items: center;
   }
   
   .countdown {
     display: flex;
-    gap: 3rem;                  /* spacing between blocks */
+    gap: 3rem;                
     justify-content: center;
-    align-items: flex-start;    /* align items at the top */
+    align-items: flex-start;    
   }
   
   .countdown-item {
@@ -102,7 +102,7 @@
   }
   
   .countdown-item b {
-    font-size: 1rem;            /* large numbers */
+    font-size: 1rem;            
     font-weight: bold;
     line-height: 1.2;
   }
@@ -112,14 +112,92 @@
     color: #ccc;
   }
   
+
+  .countdown-item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -25px;              
+    top: 0;                     
+    transform: translateY(-15%); 
+    font-size: 1rem;            
+    font-weight: bold;
+    color: #fff;
+  } */
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* space between countdown items */
+    flex-wrap: wrap; /* ensures it wraps on very small screens */
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 60px; /* flexible width that grows/shrinks */
+    min-width: 50px; /* smallest width for very small screens */
+    text-align: center;
+    position: relative;
+  }
+  
+  .countdown-item b {
+    font-size: 1rem; /* adjust for readability */
+    font-weight: bold;
+    line-height: 1.2;
+    word-break: break-word; /* ensures long numbers wrap */
+  }
+  
+  .countdown-item span {
+    font-size: 0.9rem;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  
   /* Colon separator aligned with the number row */
   .countdown-item:not(:last-child)::after {
     content: ":";
     position: absolute;
-    right: -25px;               /* adjust spacing */
-    top: 0;                     /* align with top of number */
-    transform: translateY(-15%); /* fine-tune vertical centering */
-    font-size: 1rem;            /* same size as numbers */
+    right: -10px; /* closer to number, adjusts automatically */
+    top: 50%;
+    transform: translateY(-80%);
+    font-size: 1rem; /* match number size */
     font-weight: bold;
     color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .countdown-item {
+      flex: 1 1 50px;
+    }
+  
+    .countdown-item b {
+      font-size: 1rem;
+    }
+  
+    .countdown-item span {
+      font-size: 0.75rem;
+    }
+  
+    .countdown-item:not(:last-child)::after {
+      right: -8px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .countdown-item b {
+      font-size: 1.5rem;
+    }
+  
+    .countdown-item span {
+      font-size: 1rem;
+    }
+  
+    .countdown-item:not(:last-child)::after {
+      font-size: 1.5rem;
+      right: -15px;
+    }
   }
