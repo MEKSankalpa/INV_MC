@@ -58,3 +58,71 @@
     line-height: 100%;         /* exact line height */
     letter-spacing: 0.04em;    /* 4% letter spacing */
   }
+
+  @font-face {
+    font-family: "countdown-font";
+    src: url("./fonts/CountdownFont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-Satify {
+    font-family: "countdown-font", serif;
+    font-weight: 400;
+    font-style: normal;        /* matches your requirement */
+    line-height: 100%;         /* exact line height */
+    letter-spacing: 0.04em;    /* 4% letter spacing */
+  }
+
+  .countdown-font {
+    font-family: "countdown-font", serif !important;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .countdown {
+    display: flex;
+    gap: 2rem;               /* spacing between blocks */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 3rem;                  /* spacing between blocks */
+    justify-content: center;
+    align-items: flex-start;    /* align items at the top */
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .countdown-item b {
+    font-size: 1rem;            /* large numbers */
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .countdown-item span {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* Colon separator aligned with the number row */
+  .countdown-item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -25px;               /* adjust spacing */
+    top: 0;                     /* align with top of number */
+    transform: translateY(-18%); /* fine-tune vertical centering */
+    font-size: 1rem;            /* same size as numbers */
+    font-weight: bold;
+    color: #fff;
+  }

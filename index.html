@@ -7,10 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <style>
-    .countdown span {
-      display: inline-block;
-      min-width: 50px;
-    }
+   
   </style>
 </head>
 <body class="bg-white font-sans">
@@ -61,8 +58,9 @@
   <!-- Countdown -->
   <div class="flex justify-center mt-10">
     <div id="countdown" 
-         class="countdown flex gap-6 text-white bg-gray-800 rounded-xl px-6 py-3 shadow-lg">
-    </div>
+    class="countdown flex gap-6 text-white rounded-xl px-6 py-3 shadow-lg bg-[#383838] 
+           w-[220px] sm:w-[320px] md:w-[420px] lg:w-[500px]">
+</div>
   </div>
 </section>
 
@@ -79,15 +77,17 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+      
       document.getElementById("countdown").innerHTML = `
-        <span><b>${days}</b><br>Days</span>
-        <span><b>${hours}</b><br>Hrs</span>
-        <span><b>${minutes}</b><br>Min</span>
-        <span><b>${seconds}</b><br>Sec</span>`;
+  <span class="countdown-item"><b>${days}</b><span>Days</span></span>
+  <span class="countdown-item"><b>${hours}</b><span>Hrs</span></span>
+  <span class="countdown-item"><b>${minutes}</b><span>Min</span></span>
+  <span class="countdown-item"><b>${seconds}</b><span>Sec</span></span>
+`;
 
       if (distance < 0) {
         clearInterval(timer);
-        document.getElementById("countdown").innerHTML = "We are married!";
+        document.getElementById("countdown").innerHTML = "We are going to marry today!";
       }
     }, 1000);
   </script>
