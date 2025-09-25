@@ -71,6 +71,59 @@
       /* 4% letter spacing */
   }
 
+  @font-face {
+    font-family: "font-1";
+    src: url("./fonts/JacquesFrancois-Regular.ttf") format("truetype");
+  }
+  
+  .font-1 {
+    font-family: "font-1", serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+
+  }
+
+
+  
+  @font-face {
+    font-family: "font-2";
+    src: url("./fonts/SafiraMarchPersonalUseOnly-nAa5J.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-2 {
+    font-family: "font-2", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  }
+
+  
+  @font-face {
+    font-family: "font-3";
+    src: url("./fonts/TangerineRegular-7JAD.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-3 {
+    font-family: "font-3", serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+
+  }
+
   .countdown-font {
     font-family: "countdown-font", serif !important;
     font-size: 20px;
@@ -166,7 +219,14 @@
     font-weight: bold;
     color: #fff;
   }
+
+
+  .Couple-Image16{
+    object-fit: cover;
+    object-position: center;
+  }
   
+
   /* Responsive adjustments */
   @media (max-width: 640px) {
     .countdown-item {
@@ -185,6 +245,10 @@
       right: -8px;
       font-size: 1rem;
     }
+
+    .Couple-Image16 {
+      object-position: 0% center; 
+    }
   }
   
   @media (min-width: 1024px) {
@@ -201,3 +265,4 @@
       right: -15px;
     }
   }
+
