@@ -80,7 +80,7 @@
     font-family: "font-1", serif;
 font-weight: 400;
 font-style: Regular;
-font-size: 20px;
+font-size: 24px;
 line-height: 24px;
 letter-spacing: 0%;
 text-align: center;
@@ -299,5 +299,31 @@ text-align: center;
     }
   }
 
-
+  @media (max-width: 768px) {
+    .font-1 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-2 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-3 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-4 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  
+    .font-5 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+  }
+  
   
