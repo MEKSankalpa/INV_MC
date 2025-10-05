@@ -80,7 +80,7 @@
     font-family: "font-1", serif;
 font-weight: 400;
 font-style: Regular;
-font-size: 24px;
+font-size: 20px;
 line-height: 24px;
 letter-spacing: 0%;
 text-align: center;
@@ -120,6 +120,39 @@ text-align: center;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+    
+
+  }
+
+
+  .font-4 {
+    font-family: "font-2", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  }
+
+
+  @font-face {
+    font-family: "font-5";
+    src: url("./fonts/InriaSerif-Regular.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  .font-5 {
+    font-family: "font-5", serif;
+    font-family: Inria Serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    
     
 
   }
