@@ -87,6 +87,16 @@ text-align: center;
 
   }
 
+  .font-7 {
+    font-family: "font-1", serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+
+  }
 
   
   @font-face {
@@ -150,6 +160,21 @@ text-align: center;
     font-style: Regular;
     font-size: 24px;
     line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    
+
+  }
+
+
+  .font-8 {
+    font-family: "font-5", serif;
+    font-family: Inria Serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
     
@@ -321,6 +346,16 @@ text-align: center;
     }
   
     .font-5 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+
+    .font-7 {
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+
+    .font-8 {
       font-size: 16px;
       font-weight: 400 !important;
     }
